@@ -5,7 +5,7 @@
             <navbar />
         </div>
 
-        <div class="widget-1 md:px-20 px-5 md:py-10 py-5">
+        <div class="widget-1 md:px-20 px-2 md:py-10 py-5">
             <div class="container">
                 <div class="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 border border-gray-300 border-2">
                     <div class="col">
@@ -15,7 +15,7 @@
                                 <div
                                     class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
                                 </div>
-                                <div class="absolute bottom-8 left-0 p-4 text-white text-md md:pr-20 pr-5">
+                                <div class="absolute bottom-0 md:bottom-8 left-0 p-4 text-white text-md md:pr-20 pr-5">
                                     <span
                                         class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
                                     <p class="md:text-4xl xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -136,7 +136,7 @@
                                         <span
                                             class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
                                         <p>Lorem ipsum dolor sit amet consectetur...</p>
-                                        <small class="text-gray-400 flex text-xs mt-3">
+                                        <small class="text-gray-400 flex text-xs mt-3 hidden">
                                             <span>
                                                 <Icon icon="mdi:user" color="skyblue" class="mt-1" />
                                             </span>&nbsp;By Admin&nbsp;&bull;
@@ -159,16 +159,16 @@
             </div>
         </div>
 
-        <div class="widget-2 md:px-20 px-5 py-10">
+        <div class="widget-2 md:px-20 px-2 py-10 pt-5">
             <div class="container">
                 <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10">
 
                     <div class="lg:col-span-2">
-                        <div class="first-col">
+                        <div class="first-col shadow p-2">
                             <div class="flex py-1 mb-8 border-l-4 border-blue-500">
-                                <h1 class="text-left md:text-3xl text-2xl font-bold pl-2">Popular Posts</h1>
+                                <h1 class="text-left md:text-3xl text-lg font-bold pl-2">Popular Posts</h1>
                                 <ul
-                                    class="ms-auto text-sm md:text-md  font-medium flex flex-row md:p-4 md:p-0 md:mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                                    class="ms-auto text-sm md:text-md hidden md:flex  font-medium  md:p-4 md:p-0 md:mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                                     <li>
                                         <a href="#"
                                             class="block py-2 md:pl-3 md:pr-4 pr-3 text-gray-900 md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
@@ -356,9 +356,9 @@
 
                         <div class="second-col mt-10">
                             <div class="flex py-1 mb-8 border-l-4 border-blue-500">
-                                <h1 class="text-left md:text-3xl text-2xl font-bold pl-2">Trending Posts</h1>
+                                <h1 class="text-left md:text-3xl text-lg font-bold pl-2">Trending Posts</h1>
                                 <ul
-                                    class="ms-auto text-sm md:text-md  font-medium flex flex-row md:p-4 md:p-0 md:mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                                    class="ms-auto text-sm md:text-md hidden font-medium md:flex flex-row md:p-4 md:p-0 md:mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                                     <li>
                                         <a href="#"
                                             class="block py-2 md:pl-3 md:pr-4 pr-3 text-gray-900 md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
@@ -399,7 +399,7 @@
                                                 biggest enterprise technology acquisitions of 2021 so far, in reverse
                                                 chronological order.</p>
                                             <a href="#"
-                                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-left text-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                                 Read more
                                                 <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true"
                                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -635,12 +635,12 @@
             </div>
         </div>
 
-        <div class="widget-3 md:px-20 px-5 py-10">
+        <div class="widget-3 md:px-20 px-2 py-10 pt-5">
             <div class="container">
                 <div class="flex py-1 mb-8 border-l-4 border-blue-500">
-                                <h1 class="text-left md:text-3xl text-2xl font-bold pl-2">Popular Posts</h1>
+                                <h1 class="text-left md:text-3xl text-lg font-bold pl-2">Popular Posts</h1>
                                 <ul
-                                    class="ms-auto text-sm md:text-md  font-medium flex flex-row md:p-4 md:p-0 md:mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                                    class="ms-auto text-sm md:text-md hidden md:flex font-medium flex-row md:p-4 md:p-0 md:mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                                     <li>
                                         <a href="#"
                                             class="block py-2 md:pl-3 md:pr-4 pr-3 text-gray-900 md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
@@ -788,7 +788,7 @@
                                         <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">{{ slide.blog }}
                                         </p>
                                         <a href="#"
-                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-left text-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                             Read more
                                             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true"
                                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -823,13 +823,13 @@
                                     </a>
                                     <div class="p-5">
                                         <a href="#">
-                                            <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+                                            <h5 class="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">
                                                 {{ slide.title }}</h5>
                                         </a>
                                         <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400 hidden md:block">{{ slide.blog }}
                                         </p>
                                         <a href="#"
-                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-left text-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                             Read more
                                             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true"
                                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -838,6 +838,34 @@
                                             </svg>
                                         </a>
                                     </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </Slide>
+
+                    <template #addons>
+                        <Navigation />
+                    </template>
+                </Carousel>
+                </div>
+            </div>
+        </div>
+
+        <div class="widget-4 md:px-20 px-2 py-10 pt-5">
+            <div class="container">
+                <div class="md:hidden">
+                    <Carousel :items-to-show="2.5" :wrap-around="true">
+                    <Slide v-for="slide in blogPost" :key="slide">
+                        <div class="carousel__item text-left">
+                            <div class="col">
+
+                                <div
+                                    class="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                                    <a href="#">
+                                        <img class="" src="../../assets/img/img.jpg" alt="" />
+                                    </a>
+                                   
                                 </div>
 
                             </div>
