@@ -15,7 +15,7 @@
                                 <div
                                     class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
                                 </div>
-                                <div class="absolute bottom-8 left-0 p-4 text-white text-2xl pr-20">
+                                <div class="absolute bottom-8 left-0 p-4 text-white text-md md:pr-20 pr-5">
                                     <span
                                         class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
                                     <p class="md:text-4xl xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -132,10 +132,10 @@
                                     <div
                                         class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
                                     </div>
-                                    <div class="absolute bottom-3 left-0 p-4 text-white text-sm pr-10">
+                                    <div class="absolute bottom-0 left-0 p-4 text-white text-sm">
                                         <span
                                             class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur...</p>
                                         <small class="text-gray-400 flex text-xs mt-3">
                                             <span>
                                                 <Icon icon="mdi:user" color="skyblue" class="mt-1" />
