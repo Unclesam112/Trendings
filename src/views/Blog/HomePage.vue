@@ -5,7 +5,7 @@
             <navbar />
         </div>
 
-        <div class="widget-1 md:px-20 px-2 md:py-10 py-5">
+        <div class="widget-1 lg:px-20 md:px-10 px-2 md:py-10 py-5">
             <div class="container">
                 <div class="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 border border-gray-300 border-2">
                     <div class="col">
@@ -124,50 +124,51 @@
                         </div>
 
                         <Carousel :items-to-show="1.5" :wrap-around="true" class="lg:hidden md:hidden">
-                        <Slide v-for="slide in blogPost" :key="slide">
-                        <div class="carousel__item text-left">
-                            <div class="second-post relative">
-                                <div class="relative group">
-                                    <img src="../../assets/img/img.jpg" alt="" class="w-100 border border-2-gray-500">
-                                    <div
-                                        class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
-                                    </div>
-                                    <div class="absolute bottom-0 left-0 p-4 text-white text-sm">
-                                        <span
-                                            class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
-                                        <p>Lorem ipsum dolor sit amet consectetur...</p>
-                                        <small class="text-gray-400 flex text-xs mt-3 hidden">
-                                            <span>
-                                                <Icon icon="mdi:user" color="skyblue" class="mt-1" />
-                                            </span>&nbsp;By Admin&nbsp;&bull;
-                                            <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1 ml-4" /> <span
-                                                class="mx-1">October 24, 2023</span>
-                                        </small>
+                            <Slide v-for="slide in blogPost" :key="slide">
+                                <div class="carousel__item text-left">
+                                    <div class="second-post relative">
+                                        <div class="relative group">
+                                            <img src="../../assets/img/img.jpg" alt=""
+                                                class="w-100 border border-2-gray-500">
+                                            <div
+                                                class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 p-4 text-white text-sm">
+                                                <span
+                                                    class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
+                                                <p>Lorem ipsum dolor sit amet consectetur...</p>
+                                                <small class="text-gray-400 flex text-xs mt-3 hidden">
+                                                    <span>
+                                                        <Icon icon="mdi:user" color="skyblue" class="mt-1" />
+                                                    </span>&nbsp;By Admin&nbsp;&bull;
+                                                    <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1 ml-4" />
+                                                    <span class="mx-1">October 24, 2023</span>
+                                                </small>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
+                            </Slide>
 
-                            </div>
-                        </div>
-                    </Slide>
-
-                    <template #addons>
-                        <Navigation />
-                    </template>
+                            <template #addons>
+                                <!-- <Navigation /> -->
+                            </template>
                         </Carousel>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="widget-2 md:px-20 px-2 py-10 pt-5">
+        <div class="widget-2 lg:px-20 md:px-10 px-2 py-10 pt-5">
             <div class="container">
                 <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10">
 
                     <div class="lg:col-span-2">
                         <div class="first-col shadow p-2">
-                            <div class="flex py-1 mb-8 border-l-4 border-blue-500">
+                            <div class="flex py-1 mb-8 border-l-4 border border-l-blue-500">
                                 <h1 class="text-left md:text-3xl text-lg font-bold pl-2">Popular Posts</h1>
-                                <ul
+                                <!-- <ul
                                     class="ms-auto text-sm md:text-md hidden md:flex  font-medium  md:p-4 md:p-0 md:mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                                     <li>
                                         <a href="#"
@@ -183,7 +184,7 @@
                                             class="block py-2 md:pl-3 md:pr-4 pr-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Movies</a>
                                     </li>
 
-                                </ul>
+                                </ul> -->
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                                 <div class="col">
@@ -213,10 +214,10 @@
                                         <div class="rest my-5">
 
                                             <a href="#"
-                                                class="mb-2 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32"
-                                                    src="../../assets/img/img.jpg" alt="">
-                                                <div class="flex flex-col justify-between p-4 leading-normal">
+                                                class="mb-1 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
                                                     <h5
                                                         class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
                                                         Noteworthy technology acquisitions 2021</h5>
@@ -230,10 +231,10 @@
                                             </a>
 
                                             <a href="#"
-                                                class="mb-2 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32"
-                                                    src="../../assets/img/img.jpg" alt="">
-                                                <div class="flex flex-col justify-between p-4 leading-normal">
+                                                class="mb-1 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
                                                     <h5
                                                         class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
                                                         Noteworthy technology acquisitions 2021</h5>
@@ -248,9 +249,9 @@
 
                                             <a href="#"
                                                 class=" flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32"
-                                                    src="../../assets/img/img.jpg" alt="">
-                                                <div class="flex flex-col justify-between p-4 leading-normal">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
                                                     <h5
                                                         class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
                                                         Noteworthy technology acquisitions 2021</h5>
@@ -295,10 +296,10 @@
 
                                         <div class="rest my-5">
                                             <a href="#"
-                                                class="mb-2 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32"
-                                                    src="../../assets/img/img.jpg" alt="">
-                                                <div class="flex flex-col justify-between p-4 leading-normal">
+                                                class="mb-1 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
                                                     <h5
                                                         class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
                                                         Noteworthy technology acquisitions 2021</h5>
@@ -312,10 +313,10 @@
                                             </a>
 
                                             <a href="#"
-                                                class="mb-2 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32"
-                                                    src="../../assets/img/img.jpg" alt="">
-                                                <div class="flex flex-col justify-between p-4 leading-normal">
+                                                class="mb-1 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
                                                     <h5
                                                         class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
                                                         Noteworthy technology acquisitions 2021</h5>
@@ -329,10 +330,10 @@
                                             </a>
 
                                             <a href="#"
-                                                class="mb-2 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32"
-                                                    src="../../assets/img/img.jpg" alt="">
-                                                <div class="flex flex-col justify-between p-4 leading-normal">
+                                                class="mb-1 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
                                                     <h5
                                                         class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
                                                         Noteworthy technology acquisitions 2021</h5>
@@ -351,13 +352,13 @@
                                 </div>
                             </div>
                         </div>
-                        
 
 
-                        <div class="second-col mt-10">
-                            <div class="flex py-1 mb-8 border-l-4 border-blue-500">
+
+                        <div class="second-col mt-10 shadow p-2">
+                            <div class="flex py-1 mb-8 border-l-4 border border-l-blue-500">
                                 <h1 class="text-left md:text-3xl text-lg font-bold pl-2">Trending Posts</h1>
-                                <ul
+                                <!-- <ul
                                     class="ms-auto text-sm md:text-md hidden font-medium md:flex flex-row md:p-4 md:p-0 md:mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                                     <li>
                                         <a href="#"
@@ -373,7 +374,7 @@
                                             class="block py-2 md:pl-3 md:pr-4 pr-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Movies</a>
                                     </li>
 
-                                </ul>
+                                </ul> -->
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                                 <div class="col">
@@ -418,9 +419,9 @@
                                         <div class="rest">
                                             <a href="#"
                                                 class="mb-2 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32"
-                                                    src="../../assets/img/img.jpg" alt="">
-                                                <div class="flex flex-col justify-between p-4 leading-normal">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
                                                     <h5
                                                         class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
                                                         Noteworthy technology acquisitions 2021</h5>
@@ -435,9 +436,9 @@
 
                                             <a href="#"
                                                 class="mb-2 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32"
-                                                    src="../../assets/img/img.jpg" alt="">
-                                                <div class="flex flex-col justify-between p-4 leading-normal">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
                                                     <h5
                                                         class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
                                                         Noteworthy technology acquisitions 2021</h5>
@@ -452,9 +453,9 @@
 
                                             <a href="#"
                                                 class="mb-2 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32"
-                                                    src="../../assets/img/img.jpg" alt="">
-                                                <div class="flex flex-col justify-between p-4 leading-normal">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
                                                     <h5
                                                         class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
                                                         Noteworthy technology acquisitions 2021</h5>
@@ -469,9 +470,9 @@
 
                                             <a href="#"
                                                 class="mb-2 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32"
-                                                    src="../../assets/img/img.jpg" alt="">
-                                                <div class="flex flex-col justify-between p-4 leading-normal">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
                                                     <h5
                                                         class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
                                                         Noteworthy technology acquisitions 2021</h5>
@@ -486,9 +487,164 @@
 
                                             <a href="#"
                                                 class="mb-2 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32"
-                                                    src="../../assets/img/img.jpg" alt="">
-                                                <div class="flex flex-col justify-between p-4 leading-normal">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
+                                                    <h5
+                                                        class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
+                                                        Noteworthy technology acquisitions 2021</h5>
+                                                    <p class="mb-1 font-normal text-sm text-gray-700 dark:text-gray-400">
+                                                    </p>
+                                                    <small class="text-gray-400 flex">
+                                                        <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1" /> <span
+                                                            class="mx-1">October 24, 2023</span>
+                                                    </small>
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="third-col mt-10 p-2 shadow">
+                            <div class="flex py-1 mb-8 border-l-4 border border-l-blue-500">
+                                <h1 class="text-left md:text-3xl text-lg font-bold pl-2">Trending Posts</h1>
+                                <!-- <ul
+                                    class="ms-auto text-sm md:text-md hidden font-medium md:flex flex-row md:p-4 md:p-0 md:mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 md:pl-3 md:pr-4 pr-3 text-gray-900 md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                                            aria-current="page">News</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 md:pl-3 md:pr-4 pr-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Entertainment</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 md:pl-3 md:pr-4 pr-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Movies</a>
+                                    </li>
+
+                                </ul> -->
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div class="col">
+                                    <div class="block-1">
+
+                                        <img src="../../assets/img/img.jpg" alt="" class="w-100 object-cover rounded">
+
+                                        <div
+                                            class="max-w-sm p-6 pt-0 bg-white pl-2 rounded-lg  dark:bg-gray-800 dark:border-gray-700">
+                                            <a href="#">
+                                                <small class="text-gray-400 flex text-xs my-3">
+                                                    <span>
+                                                        <Icon icon="mdi:user" color="skyblue" class="mt-1" />
+                                                    </span>&nbsp;By Admin&nbsp;&bull;
+                                                    <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1 ml-4" />
+                                                    <span class="mx-1">October 24, 2023</span>
+                                                </small>
+                                                <h5
+                                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                    Noteworthy technology acquisitions 2021</h5>
+                                            </a>
+                                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the
+                                                biggest enterprise technology acquisitions of 2021 so far, in reverse
+                                                chronological order.</p>
+                                            <a href="#"
+                                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-left text-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                                Read more
+                                                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                                    <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2"
+                                                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="block-2">
+                                        <div class="rest">
+                                            <a href="#"
+                                                class="mb-2 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
+                                                    <h5
+                                                        class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
+                                                        Noteworthy technology acquisitions 2021</h5>
+                                                    <p class="mb-1 font-normal text-sm text-gray-700 dark:text-gray-400">
+                                                    </p>
+                                                    <small class="text-gray-400 flex">
+                                                        <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1" /> <span
+                                                            class="mx-1">October 24, 2023</span>
+                                                    </small>
+                                                </div>
+                                            </a>
+
+                                            <a href="#"
+                                                class="mb-2 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
+                                                    <h5
+                                                        class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
+                                                        Noteworthy technology acquisitions 2021</h5>
+                                                    <p class="mb-1 font-normal text-sm text-gray-700 dark:text-gray-400">
+                                                    </p>
+                                                    <small class="text-gray-400 flex">
+                                                        <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1" /> <span
+                                                            class="mx-1">October 24, 2023</span>
+                                                    </small>
+                                                </div>
+                                            </a>
+
+                                            <a href="#"
+                                                class="mb-2 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
+                                                    <h5
+                                                        class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
+                                                        Noteworthy technology acquisitions 2021</h5>
+                                                    <p class="mb-1 font-normal text-sm text-gray-700 dark:text-gray-400">
+                                                    </p>
+                                                    <small class="text-gray-400 flex">
+                                                        <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1" /> <span
+                                                            class="mx-1">October 24, 2023</span>
+                                                    </small>
+                                                </div>
+                                            </a>
+
+                                            <a href="#"
+                                                class="mb-2 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
+                                                    <h5
+                                                        class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
+                                                        Noteworthy technology acquisitions 2021</h5>
+                                                    <p class="mb-1 font-normal text-sm text-gray-700 dark:text-gray-400">
+                                                    </p>
+                                                    <small class="text-gray-400 flex">
+                                                        <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1" /> <span
+                                                            class="mx-1">October 24, 2023</span>
+                                                    </small>
+                                                </div>
+                                            </a>
+
+                                            <a href="#"
+                                                class="mb-2 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                    alt="">
+                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
                                                     <h5
                                                         class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
                                                         Noteworthy technology acquisitions 2021</h5>
@@ -551,9 +707,9 @@
 
                         </div>
 
-                        <div class="latest-post">
-                            <div class="my-3 mt-8 py-1 mb-8 border-l-4 border-blue-500">
-                                <h1 class="text-left text-3xl  font-bold pl-2">Latest Posts</h1>
+                        <div class="latest-post p-2 shadow">
+                            <div class="my-3 mt-8 py-1 mb-8 border-l-4 border border-l-blue-500">
+                                <h1 class="text-left md:text-3xl text-lg  font-bold pl-2">Latest Posts</h1>
 
                             </div>
                             <div class="block-1">
@@ -580,10 +736,10 @@
                                 <div class="rest my-5">
 
                                     <a href="#"
-                                        class=" flex flex-col items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                        <img class="object-cover w-full  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                        class=" flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                        <img class="object-cover w-32 h-25 md:w-32" src="../../assets/img/img.jpg"
                                             alt="">
-                                        <div class="flex flex-col justify-between p-4 leading-normal">
+                                        <div class="flex flex-col justify-between p-4 pt-0 leading-normal">
                                             <h5
                                                 class=" text-md font-extrabold tracking-tight text-gray-900 dark:text-white">
                                                 Noteworthy technology acquisitions 2021</h5>
@@ -596,10 +752,10 @@
                                     </a>
 
                                     <a href="#"
-                                        class=" flex flex-col items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                        <img class="object-cover w-full  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                        class=" flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                        <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
                                             alt="">
-                                        <div class="flex flex-col justify-between p-4 leading-normal">
+                                        <div class="flex flex-col justify-between p-4 pt-0 leading-normal">
                                             <h5
                                                 class=" text-md font-extrabold tracking-tight text-gray-900 dark:text-white">
                                                 Noteworthy technology acquisitions 2021</h5>
@@ -612,10 +768,10 @@
                                     </a>
 
                                     <a href="#"
-                                        class=" flex flex-col items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                        <img class="object-cover w-full  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                        class=" flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                        <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
                                             alt="">
-                                        <div class="flex flex-col justify-between p-4 leading-normal">
+                                        <div class="flex flex-col justify-between p-4 pt-0 leading-normal">
                                             <h5
                                                 class=" text-md font-extrabold tracking-tight text-gray-900 dark:text-white">
                                                 Noteworthy technology acquisitions 2021</h5>
@@ -638,8 +794,8 @@
         <div class="widget-3 md:px-20 px-2 py-10 pt-5">
             <div class="container">
                 <div class="flex py-1 mb-8 border-l-4 border-blue-500">
-                                <h1 class="text-left md:text-3xl text-lg font-bold pl-2">Popular Posts</h1>
-                                <ul
+                    <h1 class="text-left md:text-3xl text-lg font-bold pl-2">Popular Posts</h1>
+                    <!-- <ul
                                     class="ms-auto text-sm md:text-md hidden md:flex font-medium flex-row md:p-4 md:p-0 md:mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                                     <li>
                                         <a href="#"
@@ -655,230 +811,13 @@
                                             class="block py-2 md:pl-3 md:pr-4 pr-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Movies</a>
                                     </li>
 
-                                </ul>
-                            </div>
-                <!-- <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                    <div class="col">
-
-                        <div class="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="" src="../../assets/img/img.jpg" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-                                        Noteworthy technology acquisitions 2021</h5>
-                                </a>
-                                <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">Here are the biggest
-                                    enterprise
-                                    technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col">
-
-                        <div class="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="" src="../../assets/img/img.jpg" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-                                        Noteworthy technology acquisitions 2021</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">Here are the biggest
-                                    enterprise
-                                    technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col">
-
-                        <div class="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="" src="../../assets/img/img.jpg" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-                                        Noteworthy technology acquisitions 2021</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">Here are the biggest
-                                    enterprise
-                                    technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col">
-
-                        <div class="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img class="" src="../../assets/img/img.jpg" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-                                        Noteworthy technology acquisitions 2021</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">Here are the biggest
-                                    enterprise
-                                    technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Read more
-                                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div> -->
-
-
-                <div class="hidden md:block">
-                    <Carousel :items-to-show="3.5" :wrap-around="true">
-                    <Slide v-for="slide in blogPost" :key="slide">
-                        <div class="carousel__item">
-                            <div class="col">
-
-                                <div
-                                    class="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                                    <a href="#">
-                                        <img class="" src="../../assets/img/img.jpg" alt="" />
-                                    </a>
-                                    <div class="p-5">
-                                        <a href="#">
-                                            <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-                                                {{ slide.title }}</h5>
-                                        </a>
-                                        <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">{{ slide.blog }}
-                                        </p>
-                                        <a href="#"
-                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-left text-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                            Read more
-                                            <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true"
-                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </Slide>
-
-                    <template #addons>
-                        <Navigation />
-                    </template>
-                </Carousel>
+                                </ul> -->
                 </div>
-               
 
-                <div class="md:hidden">
-                    <Carousel :items-to-show="1.5" :wrap-around="true">
-                    <Slide v-for="slide in blogPost" :key="slide">
-                        <div class="carousel__item text-left">
-                            <div class="col">
-
-                                <div
-                                    class="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                                    <a href="#">
-                                        <img class="" src="../../assets/img/img.jpg" alt="" />
-                                    </a>
-                                    <div class="p-5">
-                                        <a href="#">
-                                            <h5 class="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">
-                                                {{ slide.title }}</h5>
-                                        </a>
-                                        <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400 hidden md:block">{{ slide.blog }}
-                                        </p>
-                                        <a href="#"
-                                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-left text-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                            Read more
-                                            <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true"
-                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </Slide>
-
-                    <template #addons>
-                        <Navigation />
-                    </template>
-                </Carousel>
-                </div>
             </div>
         </div>
 
-        <div class="widget-4 md:px-20 px-2 py-10 pt-5">
-            <div class="container">
-                <div class="md:hidden">
-                    <Carousel :items-to-show="2.5" :wrap-around="true">
-                    <Slide v-for="slide in blogPost" :key="slide">
-                        <div class="carousel__item text-left">
-                            <div class="col">
 
-                                <div
-                                    class="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                                    <a href="#">
-                                        <img class="" src="../../assets/img/img.jpg" alt="" />
-                                    </a>
-                                   
-                                </div>
-
-                            </div>
-                        </div>
-                    </Slide>
-
-                    <template #addons>
-                        <Navigation />
-                    </template>
-                </Carousel>
-                </div>
-            </div>
-        </div>
         <Footer />
     </main>
 </template>
