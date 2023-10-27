@@ -737,8 +737,7 @@
 
                                     <a href="#"
                                         class=" flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                        <img class="object-cover w-32 h-25 md:w-32" src="../../assets/img/img.jpg"
-                                            alt="">
+                                        <img class="object-cover w-32 h-25 md:w-32" src="../../assets/img/img.jpg" alt="">
                                         <div class="flex flex-col justify-between p-4 pt-0 leading-normal">
                                             <h5
                                                 class=" text-md font-extrabold tracking-tight text-gray-900 dark:text-white">
@@ -753,8 +752,7 @@
 
                                     <a href="#"
                                         class=" flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                        <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
-                                            alt="">
+                                        <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg" alt="">
                                         <div class="flex flex-col justify-between p-4 pt-0 leading-normal">
                                             <h5
                                                 class=" text-md font-extrabold tracking-tight text-gray-900 dark:text-white">
@@ -769,8 +767,7 @@
 
                                     <a href="#"
                                         class=" flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                        <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
-                                            alt="">
+                                        <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg" alt="">
                                         <div class="flex flex-col justify-between p-4 pt-0 leading-normal">
                                             <h5
                                                 class=" text-md font-extrabold tracking-tight text-gray-900 dark:text-white">
@@ -793,7 +790,7 @@
 
         <div class="widget-3 md:px-20 px-2 py-10 pt-5">
             <div class="container">
-                <div class="flex py-1 mb-8 border-l-4 border-blue-500">
+                <div class="flex py-1 mb-8 border-l-4 border border-l-blue-500">
                     <h1 class="text-left md:text-3xl text-lg font-bold pl-2">Popular Posts</h1>
                     <!-- <ul
                                     class="ms-auto text-sm md:text-md hidden md:flex font-medium flex-row md:p-4 md:p-0 md:mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -813,7 +810,146 @@
 
                                 </ul> -->
                 </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="col">
+                        <div class="block-1">
 
+                            <img src="../../assets/img/img.jpg" alt="" class="w-100 object-cover rounded">
+
+                            <div class="max-w-sm p-6 pt-0 bg-white pl-2 rounded-lg  dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <small class="text-gray-400 flex text-xs my-3">
+                                        <span>
+                                            <Icon icon="mdi:user" color="skyblue" class="mt-1" />
+                                        </span>&nbsp;By Admin&nbsp;&bull;
+                                        <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1 ml-4" />
+                                        <span class="mx-1">October 24, 2023</span>
+                                    </small>
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Noteworthy technology acquisitions 2021</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the
+                                    biggest enterprise technology acquisitions of 2021 so far, in reverse
+                                    chronological order.</p>
+                                <a href="#"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-left text-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="block-1">
+
+                            <img src="../../assets/img/img.jpg" alt="" class="w-100 object-cover rounded">
+
+                            <div class="max-w-sm p-6 pt-0 bg-white pl-2 rounded-lg  dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <small class="text-gray-400 flex text-xs my-3">
+                                        <span>
+                                            <Icon icon="mdi:user" color="skyblue" class="mt-1" />
+                                        </span>&nbsp;By Admin&nbsp;&bull;
+                                        <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1 ml-4" />
+                                        <span class="mx-1">October 24, 2023</span>
+                                    </small>
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Noteworthy technology acquisitions 2021</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the
+                                    biggest enterprise technology acquisitions of 2021 so far, in reverse
+                                    chronological order.</p>
+                                <a href="#"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-left text-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="block-1">
+
+                            <img src="../../assets/img/img.jpg" alt="" class="w-100 object-cover rounded">
+
+                            <div class="max-w-sm p-6 pt-0 bg-white pl-2 rounded-lg  dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <small class="text-gray-400 flex text-xs my-3">
+                                        <span>
+                                            <Icon icon="mdi:user" color="skyblue" class="mt-1" />
+                                        </span>&nbsp;By Admin&nbsp;&bull;
+                                        <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1 ml-4" />
+                                        <span class="mx-1">October 24, 2023</span>
+                                    </small>
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Noteworthy technology acquisitions 2021</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the
+                                    biggest enterprise technology acquisitions of 2021 so far, in reverse
+                                    chronological order.</p>
+                                <a href="#"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-left text-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="block-1">
+
+                            <img src="../../assets/img/img.jpg" alt="" class="w-100 object-cover rounded">
+
+                            <div class="max-w-sm p-6 pt-0 bg-white pl-2 rounded-lg  dark:bg-gray-800 dark:border-gray-700">
+                                <a href="#">
+                                    <small class="text-gray-400 flex text-xs my-3">
+                                        <span>
+                                            <Icon icon="mdi:user" color="skyblue" class="mt-1" />
+                                        </span>&nbsp;By Admin&nbsp;&bull;
+                                        <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1 ml-4" />
+                                        <span class="mx-1">October 24, 2023</span>
+                                    </small>
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Noteworthy technology acquisitions 2021</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the
+                                    biggest enterprise technology acquisitions of 2021 so far, in reverse
+                                    chronological order.</p>
+                                <a href="#"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-left text-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
