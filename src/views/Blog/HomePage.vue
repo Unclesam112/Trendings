@@ -1,5 +1,8 @@
 <template>
     <main>
+        <div class="header">
+            <headerVue />
+        </div>
         <!-- NAVBAR SECTION -->
         <div class="nav-section">
             <navbar />
@@ -707,7 +710,84 @@
 
                         </div>
 
-                        <div class="latest-post p-2 shadow">
+                        <div class="latest-post p-2 shadow mt-2">
+                            <div class="my-3 mt-8 py-1 mb-8 border-l-4 border border-l-blue-500">
+                                <h1 class="text-left md:text-3xl text-lg  font-bold pl-2">Latest Posts</h1>
+
+                            </div>
+                            <div class="block-1">
+                                <div class="relative">
+                                    <div class="relative group">
+                                        <img src="../../assets/img/img.jpg" alt="" class="w-100 border border-2-gray-500">
+                                        <div
+                                            class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
+                                        </div>
+                                        <div class="absolute bottom-3 left-0 p-4 text-white text-md pr-10">
+                                            <span
+                                                class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                            <small class="text-gray-400 flex text-xs mt-3">
+                                                <span>
+                                                    <Icon icon="mdi:user" color="skyblue" class="mt-1" />
+                                                </span>&nbsp;By Admin&nbsp;&bull;
+                                                <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1 ml-4" />
+                                                <span class="mx-1">October 24, 2023</span>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rest my-5">
+
+                                    <a href="#"
+                                        class=" flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                        <img class="object-cover w-32 h-25 md:w-32" src="../../assets/img/img.jpg" alt="">
+                                        <div class="flex flex-col justify-between p-4 pt-0 leading-normal">
+                                            <h5
+                                                class=" text-md font-extrabold tracking-tight text-gray-900 dark:text-white">
+                                                Noteworthy technology acquisitions 2021</h5>
+                                            <p class="mb-1 font-normal text-sm text-gray-700 dark:text-gray-400"></p>
+                                            <small class="text-gray-400 flex">
+                                                <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1" /> <span
+                                                    class="mx-1">October 24, 2023</span>
+                                            </small>
+                                        </div>
+                                    </a>
+
+                                    <a href="#"
+                                        class=" flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                        <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg" alt="">
+                                        <div class="flex flex-col justify-between p-4 pt-0 leading-normal">
+                                            <h5
+                                                class=" text-md font-extrabold tracking-tight text-gray-900 dark:text-white">
+                                                Noteworthy technology acquisitions 2021</h5>
+                                            <p class="mb-1 font-normal text-sm text-gray-700 dark:text-gray-400"></p>
+                                            <small class="text-gray-400 flex">
+                                                <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1" /> <span
+                                                    class="mx-1">October 24, 2023</span>
+                                            </small>
+                                        </div>
+                                    </a>
+
+                                    <a href="#"
+                                        class=" flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                        <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg" alt="">
+                                        <div class="flex flex-col justify-between p-4 pt-0 leading-normal">
+                                            <h5
+                                                class=" text-md font-extrabold tracking-tight text-gray-900 dark:text-white">
+                                                Noteworthy technology acquisitions 2021</h5>
+                                            <p class="mb-1 font-normal text-sm text-gray-700 dark:text-gray-400"></p>
+                                            <small class="text-gray-400 flex">
+                                                <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1" /> <span
+                                                    class="mx-1">October 24, 2023</span>
+                                            </small>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="latest-post p-2 shadow mt-2">
                             <div class="my-3 mt-8 py-1 mb-8 border-l-4 border border-l-blue-500">
                                 <h1 class="text-left md:text-3xl text-lg  font-bold pl-2">Latest Posts</h1>
 
@@ -948,6 +1028,8 @@ import { Icon } from '@iconify/vue';
 import { Carousel, Navigation, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 import { defineComponent } from 'vue'
+import headerVue from '../../components/layout/header.vue';
+
 
 export default defineComponent({
     name: 'WrapAround',
@@ -958,6 +1040,7 @@ export default defineComponent({
         Carousel,
         Slide,
         Navigation,
+        headerVue
     },
 
     data() {

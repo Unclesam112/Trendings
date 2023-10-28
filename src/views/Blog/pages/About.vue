@@ -1,7 +1,5 @@
 <template>
-  <header class="bg-gray-900 py-4">
-
-  </header>
+  
 </template>
 
 <script>
