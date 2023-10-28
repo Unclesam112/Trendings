@@ -18,7 +18,7 @@
                                 <div class="absolute bottom-0 md:bottom-8 left-0 p-4 text-white text-md md:pr-20 pr-5">
                                     <span
                                         class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
-                                    <p class="md:text-4xl xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    <p class="md:text-4xl xl:text-2xl"> <router-link to="/blogpost"> Lorem ipsum dolor sit amet consectetur adipisicing </router-link>
                                         elit. Facere, esse!</p>
                                     <small class="text-gray-400 flex text-sm mt-3">
                                         <span>
@@ -792,23 +792,6 @@
             <div class="container">
                 <div class="flex py-1 mb-8 border-l-4 border border-l-blue-500">
                     <h1 class="text-left md:text-3xl text-lg font-bold pl-2">Popular Posts</h1>
-                    <!-- <ul
-                                    class="ms-auto text-sm md:text-md hidden md:flex font-medium flex-row md:p-4 md:p-0 md:mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                                    <li>
-                                        <a href="#"
-                                            class="block py-2 md:pl-3 md:pr-4 pr-3 text-gray-900 md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                                            aria-current="page">News</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="block py-2 md:pl-3 md:pr-4 pr-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Entertainment</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="block py-2 md:pl-3 md:pr-4 pr-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Movies</a>
-                                    </li>
-
-                                </ul> -->
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     <div class="col">
