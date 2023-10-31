@@ -1004,7 +1004,7 @@ export default defineComponent({
 
     methods: {
         async fetchTopHeadline() {
-            await axios.get(API_ENDPOINTS.top_headline)
+            await axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=85c4740e5f9f44d8929216cc603e408a')
             .then(response => {
                 const headline = response.data.articles
                 this.blogPost = response.data.articles
