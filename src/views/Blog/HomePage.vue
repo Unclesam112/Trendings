@@ -14,7 +14,7 @@
                     <div class="col">
                         <div class="first-post relative" v-if="firstPost">
                             <div class="relative group">
-                                <img :src="firstPost.urlToImage" alt="" class="w-full h-96 border border-2-gray-500">
+                                <img :src="firstPost.urlToImage" alt="" class="w-full h-96 object-cover border border-2-gray-500">
                                 <div
                                     class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
                                 </div>
@@ -135,7 +135,7 @@
                                     <div class="second-post relative">
                                         <div class="relative group">
                                             <img :src="slide.urlToImage" alt=""
-                                                class="w-100 border border-2-gray-500">
+                                                class="w-100 h-48 object-cover border border-2-gray-500">
                                             <div
                                                 class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
                                             </div>
