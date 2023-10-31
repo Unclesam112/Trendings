@@ -246,8 +246,8 @@
                                 <div class="col">
                                     <div class="block-2">
                                         <div class="relative">
-                                            <div class="relative group">
-                                                <img src="../../assets/img/img.jpg" alt=""
+                                            <div class="relative group" v-if="fifthPost">
+                                                <img :src="fifthPost.urlToImage" alt=""
                                                     class="w-100 border border-2-gray-500">
                                                 <div
                                                     class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
@@ -255,7 +255,7 @@
                                                 <div class="absolute bottom-3 left-0 p-4 text-white text-md pr-10">
                                                     <span
                                                         class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                                    <p class="line-clamp-2">{{ fifthPost.title }}</p>
                                                     <small class="text-gray-400 flex text-xs mt-3">
                                                         <span>
                                                             <Icon icon="mdi:user" color="skyblue" class="mt-1" />
@@ -270,13 +270,14 @@
 
                                         <div class="rest my-5">
                                             <a href="#"
+                                            v-for="blog in blogPost.slice(0, 3)" :key="blog"
                                                 class="mb-1 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                <img class="object-cover w-32  h-25 md:w-32" :src="blog.urlToImage"
                                                     alt="">
                                                 <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
                                                     <h5
-                                                        class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
-                                                        Noteworthy technology acquisitions 2021</h5>
+                                                        class="lg:text-md text-sm font-extrabold line-clamp-2 tracking-tight text-gray-900 dark:text-white">
+                                                        {{ blog.title }}</h5>
                                                     <p class="mb-1 font-normal text-sm text-gray-700 dark:text-gray-400">
                                                     </p>
                                                     <small class="text-gray-400 flex">
@@ -286,40 +287,7 @@
                                                 </div>
                                             </a>
 
-                                            <a href="#"
-                                                class="mb-1 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
-                                                    alt="">
-                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
-                                                    <h5
-                                                        class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
-                                                        Noteworthy technology acquisitions 2021</h5>
-                                                    <p class="mb-1 font-normal text-sm text-gray-700 dark:text-gray-400">
-                                                    </p>
-                                                    <small class="text-gray-400 flex">
-                                                        <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1" /> <span
-                                                            class="mx-1">October 24, 2023</span>
-                                                    </small>
-                                                </div>
-                                            </a>
-
-                                            <a href="#"
-                                                class="mb-1 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
-                                                    alt="">
-                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
-                                                    <h5
-                                                        class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
-                                                        Noteworthy technology acquisitions 2021</h5>
-                                                    <p class="mb-1 font-normal text-sm text-gray-700 dark:text-gray-400">
-                                                    </p>
-                                                    <small class="text-gray-400 flex">
-                                                        <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1" /> <span
-                                                            class="mx-1">October 24, 2023</span>
-                                                    </small>
-                                                </div>
-                                            </a>
-
+                                          
 
                                         </div>
                                     </div>
