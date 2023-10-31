@@ -12,17 +12,20 @@
             <div class="container">
                 <div class="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 border border-gray-300 border-2">
                     <div class="col">
-                        <div class="first-post relative">
+                        <div class="first-post relative" v-if="firstPost">
                             <div class="relative group">
-                                <img src="../../assets/img/img.jpg" alt="" class="w-full md:h-86 border border-2-gray-500">
+                                <img :src="firstPost.urlToImage" alt="" class="w-full h-96 border border-2-gray-500">
                                 <div
                                     class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
                                 </div>
                                 <div class="absolute bottom-0 md:bottom-8 left-0 p-4 text-white text-md md:pr-20 pr-5">
                                     <span
                                         class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
-                                    <p class="md:text-4xl xl:text-2xl"> <router-link to="/blogpost"> Lorem ipsum dolor sit amet consectetur adipisicing </router-link>
-                                        elit. Facere, esse!</p>
+                                    <p class="md:text-4xl xl:text-2xl"> 
+                                        <router-link to="/blogpost"> 
+                                           {{firstPost.title}}
+                                        </router-link>
+                                    </p>
                                     <small class="text-gray-400 flex text-sm mt-3">
                                         <span>
                                             <Icon icon="mdi:user" color="skyblue" class="mt-1" />
@@ -38,16 +41,16 @@
 
                     <div class="col">
                         <div class="grid grid-cols-1 xl:grid-cols-2 hidden lg:grid">
-                            <div class="second-post relative">
+                            <div class="second-post relative" v-if="secondPost">
                                 <div class="relative group">
-                                    <img src="../../assets/img/img.jpg" alt="" class="w-100 border border-2-gray-500">
+                                    <img :src="secondPost.urlToImage" alt="" class="w-100 h-48 border border-2-gray-500 object-cover">
                                     <div
                                         class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
                                     </div>
                                     <div class="absolute bottom-3 left-0 p-4 text-white text-md pr-10">
                                         <span
                                             class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <p class="line-clamp-2">{{ secondPost.title }}</p>
                                         <small class="text-gray-400 flex text-xs mt-3">
                                             <span>
                                                 <Icon icon="mdi:user" color="skyblue" class="mt-1" />
@@ -60,16 +63,16 @@
 
                             </div>
 
-                            <div class="third-post relative">
+                            <div class="third-post relative" v-if="thirdPost">
                                 <div class="relative group">
-                                    <img src="../../assets/img/img.jpg" alt="" class="w-100 border border-2-gray-500">
+                                    <img :src="thirdPost.urlToImage" alt="" class="w-100  h-48 border border-2-gray-500 object-cover">
                                     <div
                                         class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
                                     </div>
                                     <div class="absolute bottom-3 left-0 p-4 text-white text-md pr-10">
                                         <span
                                             class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <p class="line-clamp-2">{{thirdPost.title}}</p>
                                         <small class="text-gray-400 flex text-xs mt-3">
                                             <span>
                                                 <Icon icon="mdi:user" color="skyblue" class="mt-1" />
@@ -83,16 +86,16 @@
                         </div>
 
                         <div class=" grid grid-cols-1 xl:grid-cols-2 hidden lg:grid">
-                            <div class="second-post relative">
+                            <div class="second-post relative" v-if="fourthPost">
                                 <div class="relative group">
-                                    <img src="../../assets/img/img.jpg" alt="" class="w-100 border border-2-gray-500">
+                                    <img :src="fourthPost.urlToImage" alt="" class="w-100  h-48 border border-2-gray-500 object-cover">
                                     <div
                                         class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
                                     </div>
                                     <div class="absolute bottom-3 left-0 p-4 text-white text-md pr-10">
                                         <span
                                             class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <p class="line-clamp-2">{{fourthPost.title}}</p>
                                         <small class="text-gray-400 flex text-xs mt-3">
                                             <span>
                                                 <Icon icon="mdi:user" color="skyblue" class="mt-1" />
@@ -104,16 +107,16 @@
                                 </div>
                             </div>
 
-                            <div class="third-post relative">
+                            <div class="third-post relative" v-if="fifthPost">
                                 <div class="relative group">
-                                    <img src="../../assets/img/img.jpg" alt="" class="w-100 border border-2-gray-500">
+                                    <img :src="fifthPost.urlToImage" alt="" class="w-100  h-48 border border-2-gray-500 object-cover">
                                     <div
                                         class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
                                     </div>
                                     <div class="absolute bottom-3 left-0 p-4 text-white text-md pr-10">
                                         <span
                                             class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <p class="line-clamp-2">{{fifthPost.title}}</p>
                                         <small class="text-gray-400 flex text-xs mt-3">
                                             <span>
                                                 <Icon icon="mdi:user" color="skyblue" class="mt-1" />
@@ -131,7 +134,7 @@
                                 <div class="carousel__item text-left">
                                     <div class="second-post relative">
                                         <div class="relative group">
-                                            <img src="../../assets/img/img.jpg" alt=""
+                                            <img :src="slide.urlToImage" alt=""
                                                 class="w-100 border border-2-gray-500">
                                             <div
                                                 class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
@@ -139,7 +142,7 @@
                                             <div class="absolute bottom-0 left-0 p-4 text-white text-sm">
                                                 <span
                                                     class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
-                                                <p>Lorem ipsum dolor sit amet consectetur...</p>
+                                                <p class="line-clamp-2">{{slide.title}}</p>
                                                 <small class="text-gray-400 flex text-xs mt-3 hidden">
                                                     <span>
                                                         <Icon icon="mdi:user" color="skyblue" class="mt-1" />
@@ -193,8 +196,8 @@
                                 <div class="col">
                                     <div class="block-1">
                                         <div class="relative">
-                                            <div class="relative group">
-                                                <img src="../../assets/img/img.jpg" alt=""
+                                            <div class="relative group" v-if="firstPost">
+                                                <img :src="firstPost.urlToImage" alt=""
                                                     class="w-100 border border-2-gray-500">
                                                 <div
                                                     class="absolute top-0 left-0 w-full h-full bg-black opacity-50 group-hover:opacity-75 transition-opacity">
@@ -202,7 +205,7 @@
                                                 <div class="absolute bottom-3 left-0 p-4 text-white text-md pr-10">
                                                     <span
                                                         class="bg-green-500 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Entertainment</span>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                                    <p class="line-clamp-2">{{ firstPost.title }}</p>
                                                     <small class="text-gray-400 flex text-xs mt-3">
                                                         <span>
                                                             <Icon icon="mdi:user" color="skyblue" class="mt-1" />
@@ -217,13 +220,14 @@
                                         <div class="rest my-5">
 
                                             <a href="#"
+                                                v-for="blog in blogPost.slice(0, 3)" :key="blog"
                                                 class="mb-1 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
+                                                <img class="object-cover w-32  h-25 md:w-32" :src="blog.urlToImage"
                                                     alt="">
                                                 <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
                                                     <h5
-                                                        class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
-                                                        Noteworthy technology acquisitions 2021</h5>
+                                                        class="lg:text-md text-sm font-extrabold line-clamp-2 tracking-tight text-gray-900 dark:text-white">
+                                                       {{blog.title}}</h5>
                                                     <p class="mb-1 font-normal text-sm text-gray-700 dark:text-gray-400">
                                                     </p>
                                                     <small class="text-gray-400 flex">
@@ -233,40 +237,7 @@
                                                 </div>
                                             </a>
 
-                                            <a href="#"
-                                                class="mb-1 flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
-                                                    alt="">
-                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
-                                                    <h5
-                                                        class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
-                                                        Noteworthy technology acquisitions 2021</h5>
-                                                    <p class="mb-1 font-normal text-sm text-gray-700 dark:text-gray-400">
-                                                    </p>
-                                                    <small class="text-gray-400 flex">
-                                                        <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1" /> <span
-                                                            class="mx-1">October 24, 2023</span>
-                                                    </small>
-                                                </div>
-                                            </a>
-
-                                            <a href="#"
-                                                class=" flex flex-row items-center bg-white md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                                <img class="object-cover w-32  h-25 md:w-32" src="../../assets/img/img.jpg"
-                                                    alt="">
-                                                <div class="flex flex-col justify-between p-4 pt-1 leading-normal">
-                                                    <h5
-                                                        class="lg:text-md text-sm font-extrabold tracking-tight text-gray-900 dark:text-white">
-                                                        Noteworthy technology acquisitions 2021</h5>
-                                                    <p class="mb-1 font-normal text-sm text-gray-700 dark:text-gray-400">
-                                                    </p>
-                                                    <small class="text-gray-400 flex">
-                                                        <Icon icon="mdi:clock-outline" color="skyblue" class="mt-1" /> <span
-                                                            class="mx-1">October 24, 2023</span>
-                                                    </small>
-                                                </div>
-                                            </a>
-
+                                          
 
                                         </div>
                                     </div>
@@ -1029,6 +1000,8 @@ import { Carousel, Navigation, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 import { defineComponent } from 'vue'
 import headerVue from '../../components/layout/header.vue';
+import API_ENDPOINTS from '../../components/Utils/apiRoutes';
+import axios from 'axios'
 
 
 export default defineComponent({
@@ -1045,30 +1018,44 @@ export default defineComponent({
 
     data() {
         return {
-            blogPost: [
-                {
-                    title: "Noteworthy technology acquisitions 2021",
-                    blog: "Here are different enterprise technology acquisitions of 2021 so far, in reverse chronological order."
-                },
-                {
-                    title: "Noteworthy technology acquisitions 2021",
-                    blog: "Here are different enterprise technology acquisitions of 2021 so far, in reverse chronological order."
-                },
-                {
-                    title: "Noteworthy technology acquisitions 2021",
-                    blog: "Here are different enterprise technology acquisitions of 2021 so far, in reverse chronological order."
-                },
-                {
-                    title: "Noteworthy technology acquisitions 2021",
-                    blog: "Here are different enterprise technology acquisitions of 2021 so far, in reverse chronological order."
-                },
-                {
-                    title: "Noteworthy technology acquisitions 2021",
-                    blog: "Here are different enterprise technology acquisitions of 2021 so far, in reverse chronological order."
-                },
-            ]
+            
+            // headline: [],
+            blogPost:[],
+                firstPost: null,
+                secondPost: null,
+                thirdPost: null,
+                fourthPost: null,
+                fifthPost: null
+
+        }
+    },
+
+    mounted() {
+        this.fetchTopHeadline()
+    },
+
+    methods: {
+        async fetchTopHeadline() {
+            await axios.get(API_ENDPOINTS.top_headline)
+            .then(response => {
+                const headline = response.data.articles
+                this.blogPost = response.data.articles
+                console.log(response.data.articles)
+
+                if(headline.length > 0) {
+                    this.firstPost = headline[0]
+                    this.secondPost = headline[1]
+                    this.thirdPost = headline[2]
+                    this.fourthPost = headline[3]
+                    this.fifthPost = headline[4]
+                }
+            })
+            .catch(error => {
+               console.log("Error fetching data", error)
+            })
         }
     }
+
 })
 </script>
 
